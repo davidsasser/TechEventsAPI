@@ -1,0 +1,30 @@
+{
+  "name": "techevents",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "stmux -w always -e ERROR -m beep,system -- [ -t 'Client' 'huncwot client' .. -t 'Server' 'huncwot server' ]"
+  },
+  "dependencies": {
+    "huncwot": "0.50.1"
+  },
+  "@pika/web": {
+    "webDependencies": []
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "@pika/web": "^0.6.1",
+    "@wessberg/rollup-plugin-ts": "^1.1.80",
+    "cross-env": "^6.0.3",
+    "node-pg-migrate": "^3.23.3",
+    "stmux": "^1.7.1",
+    "typescript": "^3.7.2",
+    "prettier": "^1.19.1",
+    "rollup-plugin-livereload": "^1.0.4",
+    "rollup-plugin-serve": "^1.0.1"
+  }
+}
